@@ -1,15 +1,8 @@
 import express from 'express';
-
+import routes from './routes'
 const app = express()
 
-app.get('/users', (req, resp) => {
-  console.log('Bem vindo usuário')
-
-  resp.json([
-    'Thiago',
-    'Viana',
-    'Silva',
-  ])
-})
+app.use(express.json())
+app.use(routes)
 
 app.listen(3333)
