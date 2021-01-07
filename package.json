@@ -1,11 +1,12 @@
 {
-  "name": "Ecoleta",
+  "name": "ecoleta",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node-dev ./src/server.ts",
-    "knex:migrate": "knex migrate:latest --knexfile knexfile.ts migrate:latest"
+    "start": "ts-node-dev --ignore-watch node_modules ./src/server.ts",
+    "knex:seed": "knex --knexfile knexfile.ts seed:run",
+    "knex:migrate": "knex --knexfile knexfile.ts migrate:latest"
   },
   "keywords": [],
   "author": "",
