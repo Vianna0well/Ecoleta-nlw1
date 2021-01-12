@@ -12,11 +12,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "knex": "^0.21.15",
     "sqlite3": "^5.0.0"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.9",
     "@types/express": "^4.17.9",
     "ts-node": "^9.1.0",
     "ts-node-dev": "^1.0.0",
